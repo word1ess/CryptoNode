@@ -3937,10 +3937,11 @@ label.copy .btn__url {
   transform: translate(0%, -50%);
 }
 .search input {
-  padding-left: 40px;
+  display: block !important;
+  padding-left: 40px !important;
 }
 .search label {
-  position: relative;
+  position: relative !important;
 }
 
 .filter-btn {
