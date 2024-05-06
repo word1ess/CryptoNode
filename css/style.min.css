@@ -3587,15 +3587,16 @@ label p {
 }
 
 label.copy {
-  position: relative;
-  display: block;
+  position: relative !important;
+  display: block !important;
 }
 label.copy p {
   font-size: 12px;
   margin-bottom: 5px;
 }
 label.copy input {
-  padding-right: 45px;
+  display: block !important;
+  padding-right: 45px !important;
 }
 label.copy .btn__url {
   right: 10px;
