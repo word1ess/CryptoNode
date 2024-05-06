@@ -3578,6 +3578,10 @@ label p {
   top: 50%;
   transform: translate(0%, -50%);
 }
+.text-in .btn__url {
+  left: auto;
+  right: 10px;
+}
 .text-in p {
   left: 10px;
 }
