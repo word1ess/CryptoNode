@@ -3939,13 +3939,13 @@ label.copy .btn__url {
 .search {
   width: 100%;
   max-width: 354px;
-  position: relative;
+  position: relative !important;
 }
 .search img {
-  position: absolute;
-  top: 50%;
-  left: 14px;
-  transform: translate(0%, -50%);
+  position: absolute !important;
+  top: 50% !important;
+  left: 14px !important;
+  transform: translate(0%, -50%) !important;
 }
 .search input {
   display: block !important;
@@ -4632,6 +4632,10 @@ label.copy .btn__url {
   background: linear-gradient(138deg, #5197ff 0%, #2c54e5 100%);
 }
 
+.graph {
+  margin-bottom: 20px;
+}
+
 .card {
   padding: 22.5px 20px 20px;
   border-radius: 30px;
@@ -4651,10 +4655,21 @@ label.copy .btn__url {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  position: relative;
+  z-index: 10 !important;
+}
+.card__currency {
+  position: relative;
+  z-index: 10;
 }
 .card__currency img {
   border: 1px solid #fff;
   border-radius: 50%;
+}
+.card__currency .arrow,
+.card__currency .dropdown-arrow {
+  position: relative;
+  z-index: 10;
 }
 .card__currency .arrow::after, .card__currency .arrow::before,
 .card__currency .dropdown-arrow::after,
@@ -4670,11 +4685,14 @@ label.copy .btn__url {
 .card__currency.dropdown-container {
   border: none;
   background: transparent;
+  position: relative;
+  z-index: 10;
 }
 .card__currency .header-down__menu {
   background: transparent;
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
+  z-index: 1;
 }
 .card__settings {
   display: flex;
@@ -4686,13 +4704,28 @@ label.copy .btn__url {
   justify-content: center;
   border-radius: 10px;
   padding: 12px 10px;
+  width: 35px;
+  height: 35px;
   background: rgba(255, 255, 255, 0.1);
+  transition: all 300ms ease;
 }
-.card__smal-btn svg {
+.card__smal-btn img {
+  position: absolute;
   width: 15px;
   height: 15px;
-  fill: white;
-  background: none;
+  transition: all 300ms ease;
+}
+.card__smal-btn .hover {
+  opacity: 0;
+}
+.card__smal-btn:hover {
+  background: #fff;
+}
+.card__smal-btn:hover .visible {
+  opacity: 0;
+}
+.card__smal-btn:hover .hover {
+  opacity: 1;
 }
 .card__total {
   font-weight: 700;
@@ -4727,6 +4760,11 @@ label.copy .btn__url {
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   padding: 10px 15px;
+  transition: all 300ms ease;
+}
+.card__btns button:hover {
+  background: #fff;
+  color: #000;
 }
 
 .aml__form {
@@ -5779,7 +5817,13 @@ body {
     margin-bottom: 10px;
   }
   .header__search {
-    flex: 0 0 140px;
+    display: block;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .header__currency-menu {
+    flex-wrap: wrap;
+    flex: 1 1 100%;
   }
 }
 @media only screen and (max-width: 1600px) {
@@ -5789,6 +5833,16 @@ body {
   .chat__chat {
     flex: 1 1 100%;
     min-width: 100%;
+  }
+  .header__row {
+    flex-wrap: wrap;
+  }
+  .header__name-page {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+  }
+  .header__currency-menu {
+    min-width: auto;
   }
 }
 @media only screen and (max-width: 1560px) {
@@ -5836,26 +5890,13 @@ body {
     z-index: 100;
     transform: translate(0%, 0%);
   }
-  .header__row {
-    flex-wrap: wrap;
-  }
-  .header__name-page {
-    flex: 1 1 100%;
-    margin-bottom: 10px;
-  }
-  .header__search {
-    flex: 0 0 140px;
-  }
-  .header .currency span:first-child {
-    display: none;
-  }
   .transactions__table td:nth-child(1),
   .transactions__table th:nth-child(1) {
     width: 300px;
     flex: 0 0 300px;
   }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1111px) {
   .profile__header,
   .notification-item__header {
     flex-wrap: wrap;
@@ -5998,6 +6039,9 @@ body {
   }
   .content__aside-btn.active {
     display: none;
+  }
+  .text-in input {
+    padding-right: 64px;
   }
   .wrapper {
     height: max-content;
@@ -6162,6 +6206,24 @@ body {
   }
   .header .currency {
     flex: 1 1 100%;
+    order: 5;
+  }
+  .header__currency-menu {
+    gap: 20px;
+  }
+  .header__currency-menu .swap {
+    order: 9999;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  .header__currency-menu .notification {
+    order: 2;
+  }
+  .header__currency-menu .header__lang {
+    order: 1;
+    width: 65px;
+    flex: none;
   }
   .header .currency span:first-child {
     display: block;
@@ -6181,5 +6243,8 @@ body {
   }
   .header__dropdown-mobile .dropdown-arrow::before {
     left: 3px;
+  }
+  .transactions__filters {
+    max-width: 140px;
   }
 }
