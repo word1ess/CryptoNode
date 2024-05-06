@@ -1,0 +1,61 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="js/app.min.js"></script>
+    <title>Войти</title>
+</head>
+
+    <body>
+        <div class="wrapper height">
+            <main class="content withoutpadding">
+                <article class="login">
+                    <div class="login__info">
+                        <div class="login__company">
+                            <h2>FreeСryptoNode</h2>
+                            <p>Используй и храни крипту безопасно</p>
+                        </div>
+                        <div class="login__form">
+                            <h1>Войти в личный кабинет</h1>
+                            <label>
+                                <p>Ваш e-mail</p>
+                                <input type="email" name="email" placeholder="E-mail">
+                            </label>
+                            <label>
+                                <p>Ваш пароль</p>
+                                <input type="password" name="password" placeholder="Пароль">
+                            </label>
+                            <label>
+                                <p>Подтвердить пароль</p>
+                                <input type="password" name="password" placeholder="Пароль">
+                            </label>
+                            <div class="login__checkboxes">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="custom-checkbox">
+                                    <p>
+                                        Даю согласие на обработку персональных данных и согласен с
+                                        <a href="#">политикой конфиденциальности</a>
+                                    </p>
+                                </label>
+                            </div>
+                            <button class="btn">Зарегистрироваться</button>
+                            <button class="btn btn__bordered">Войти</button>
+                        </div>
+                        <div class="login__copy">
+                            Copyright © 2024 FreeСryptoNode. Все права защищены
+                        </div>
+                    </div>
+                    <div class="login__img">
+                        <img src="img/common/edit-profile.png" alt="edit-profile">
+                    </div>
+                </article>
+            </main>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,638 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="js/app.min.js"></script>
+    <title>Эскроу</title>
+</head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="aside">
+                <header class="aside__header">
+                    <h2>FreeСryptoNode</h2>
+                    <h3>Используй и храни крипту безопасно</h3>
+                    <div class="aside__user user">
+                        <div class="user__img">
+                            <img src="img/svgicons/user.svg" alt="user">
+                        </div>
+                        <div class="user__info">
+                            <p>Roman Shukhevych</p>
+                            <p>+2% 2 800$</p>
+                        </div>
+                    </div>
+                </header>
+                <main class="aside__links">
+                    <a href="#">
+                        <img src="img/svgicons/dashboard.svg" alt="dashboard">
+                        <p>Дашборд</p>
+                    </a>
+                    <a href="#" class="active">
+                        <img src="img/svgicons/wallets.svg" alt="wallets">
+                        <p> Мои кошельки</p>
+                    </a>
+                    <a href="#">
+                        <img src="img/svgicons/esk.svg" alt="esk">
+                        <p> Эскроу</p>
+                    </a>
+                    <a href="#">
+                        <img src="img/svgicons/shops.svg" alt="shops">
+                        <p> Магазины</p>
+                    </a>
+                    <a href="#">
+                        <img src="img/svgicons/documents.svg" alt="documents">
+                        <p> Документация</p>
+                    </a>
+                    <a href="#">
+                        <img src="img/svgicons/lm.svg" alt="lm">
+                        <p> LMWEB</p>
+                    </a>
+                    <a href="#">
+                        <img src="img/svgicons/admin.svg" alt="admin">
+                        <p> Кабинет админа</p>
+                    </a>
+                    <a href="#">
+                        <img src="img/svgicons/chat.svg" alt="chat">
+                        <p> Чат</p>
+                    </a>
+                </main>
+                <footer class="aside__footer">
+                    <a href="#">
+                        <img src="img/svgicons/lk.svg" alt="lk">
+                        <p>Профиль</p>
+                    </a>
+                    <a href="#">
+                        <img src="img/svgicons/exit.svg" alt="exit">
+                        <p>Выйти</p>
+                    </a>
+                </footer>
+            </aside>
+            <main class="content">
+                <header class="header">
+    <div class="header__row">
+        <div class="header__name-page">
+            Название страницы
+        </div>
+        <div class="header__currency-menu">
+            <a href="#" class="swap btn mobile">Swap</a>
+            <a href="#" class="notification mobile">
+                <img src="img/svgicons/notification.svg" alt="notification">
+            </a>
+            <div class="header__lang dropdown-container">
+                <div class="arrow"></div>
+                <p class="dropdown-toggle hover-dropdown">Ru</p>
+                <ul class="header-down__menu dropdown-menu">
+                    <li class="header-down__link">
+                        <p>Ru</p>
+                    </li>
+                    <li class="header-down__link">
+                        <p>Ru</p>
+                    </li>
+                    <li class="header-down__link">
+                        <p>Ru</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="currency dropdown-container">
+                <div class="arrow"></div>
+                <div class="currency__link dropdown-toggle hover-dropdown">
+                    <img src="img/svgicons/bitcoin.svg" alt="">
+                    <div>
+                        <span>Bitcoin</span>
+                        <span>66 329,50 $</span>
+                    </div>
+                </div>
+                <ul class="header-down__menu dropdown-menu">
+                    <li class="header-down__link currency-down__link">
+                        <img src="img/svgicons/bitcoin.svg" alt="">
+                        <p>
+                            Bitcoin
+                            <span>66 329,50 $</span>
+                        </p>
+                    </li>
+                    <li class="header-down__link currency-down__link">
+                        <img src="img/svgicons/bitcoin.svg" alt="">
+                        <p>
+                            Bitcoin
+                            <span>66 329,50 $</span>
+                        </p>
+                    </li>
+                    <li class="header-down__link currency-down__link">
+                        <img src="img/svgicons/bitcoin.svg" alt="">
+                        <p>
+                            Bitcoin
+                            <span>66 329,50 $</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="currency dropdown-container">
+                <div class="arrow"></div>
+                <div class="currency__link dropdown-toggle hover-dropdown">
+                    <img src="img/svgicons/litecoin.svg" alt="">
+                    <div>
+                        <span>1 Litecoin:</span>
+                        <span>9 253,05 ₽</span>
+                    </div>
+                </div>
+                <ul class="header-down__menu dropdown-menu">
+                    <li class="header-down__link currency-down__link">
+                        <img src="img/svgicons/litecoin.svg" alt="">
+                        <p>
+                            1 Litecoin:
+                            <span>9 253,05 ₽</span>
+                        </p>
+                    </li>
+                    <li class="header-down__link currency-down__link">
+                        <img src="img/svgicons/litecoin.svg" alt="">
+                        <p>
+                            1 Litecoin:
+                            <span>9 253,05 ₽</span>
+                        </p>
+                    </li>
+                    <li class="header-down__link currency-down__link">
+                        <img src="img/svgicons/litecoin.svg" alt="">
+                        <p>
+                            1 Litecoin:
+                            <span>9 253,05 ₽</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="currency dropdown-container">
+                <div class="arrow"></div>
+                <div class="currency__link dropdown-toggle hover-dropdown">
+                    <img src="img/svgicons/money.svg" alt="">
+                    <div>
+                        <span> Валюта:</span>
+                        <span>$</span>
+                    </div>
+                </div>
+                <ul class="header-down__menu dropdown-menu">
+                    <li class="header-down__link currency-down__link">
+                        <img src="img/svgicons/money.svg" alt="">
+                        <p>
+                            Валюта:
+                            <span>$</span>
+                        </p>
+                    </li>
+                    <li class="header-down__link currency-down__link">
+                        <img src="img/svgicons/money.svg" alt="">
+                        <p>
+                            Валюта:
+                            <span>$</span>
+                        </p>
+                    </li>
+                    <li class="header-down__link currency-down__link">
+                        <img src="img/svgicons/money.svg" alt="">
+                        <p>
+                            Валюта:
+                            <span>$</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <form action="#" class="header__search">
+                <label>
+                    <img src="img/svgicons/search.svg" alt="search">
+                    <input type="search" placeholder="Поиск ...">
+                </label>
+            </form>
+        </div>
+        <a href="#" class="swap btn">Swap</a>
+        <a href="#" class="notification">
+            <img src="img/svgicons/notification.svg" alt="notification">
+        </a>
+        <div class="header__dropdown-mobile dropdown-container">
+            <div class="arrow"></div>
+        </div>
+        <div class="header__burger">
+            <span></span>
+        </div>
+    </div>
+</header>
+<svg display="none">
+    <symbol id="replace" viewBox="0 0 15 15">
+        <g>
+            <path d="M9.58582 1.91999L7.78674 0.122945C7.70518 0.0414834 7.5964 -0.000223195 7.48396 2.07033e-05C7.36944 -0.00107684 7.25822 0.0414834 7.17666 0.122945L5.41469 1.88291C5.24963 2.04779 5.24963 2.31583 5.41469 2.48059L5.64189 2.70753C5.80122 2.86668 6.07934 2.86668 6.23878 2.70753L6.91332 2.0323V4.5136C6.91332 4.52116 6.91771 4.52738 6.91906 4.53445C6.93737 4.75067 7.11892 4.92176 7.34026 4.92176H7.66135C7.89466 4.92176 8.08646 4.7325 8.08646 4.49945V4.22238C8.08646 4.22117 8.08646 4.22031 8.08646 4.21934V2.06913L8.76124 2.74448C8.92631 2.90936 9.19405 2.90936 9.35899 2.74448L9.58582 2.51778C9.75089 2.35278 9.75089 2.08462 9.58582 1.91999Z"/>
+            <path d="M9.58558 12.4826L9.3585 12.2553C9.19917 12.0959 8.92093 12.0959 8.76136 12.2553L8.08658 12.9306V10.79C8.08658 10.7887 8.08658 10.788 8.08658 10.7869V10.5098C8.08658 10.2767 7.89466 10.0781 7.6616 10.0781H7.34026C7.11916 10.0781 6.93761 10.2536 6.91918 10.4701C6.91784 10.4773 6.91344 10.4883 6.91344 10.4957V12.9677L6.2389 12.2925C6.07946 12.1332 5.80073 12.1332 5.64128 12.2925L5.4142 12.5194C5.24938 12.6842 5.24963 12.9524 5.41469 13.1172L7.17678 14.8771C7.25626 14.9567 7.36236 15 7.47187 15H7.48774C7.60116 15 7.70701 14.9568 7.78661 14.8771L9.58558 13.0802C9.75064 12.9154 9.75064 12.6474 9.58558 12.4826Z"/>
+            <path d="M4.48584 6.91392H4.20712C4.20626 6.91392 4.20541 6.91392 4.20443 6.91392H2.07155L2.74768 6.24223C2.8274 6.16272 2.87123 6.05833 2.87123 5.94528C2.87123 5.83211 2.8274 5.72687 2.74768 5.64748L2.52047 5.42102C2.35541 5.25615 2.08694 5.25639 1.92212 5.42127L0.12303 7.21819C0.0414756 7.29953 -0.00210977 7.40867 8.78112e-05 7.52062C-0.00223186 7.63708 0.0414756 7.7461 0.12303 7.82756L1.885 9.58766C1.96754 9.67009 2.07583 9.71131 2.18424 9.71131C2.29266 9.71131 2.40095 9.67009 2.48348 9.58766L2.71056 9.36083C2.79029 9.28132 2.83424 9.1751 2.83424 9.06206C2.83424 8.94889 2.79041 8.84157 2.71056 8.76218L2.03468 8.08585H4.49866C4.50611 8.08585 4.51832 8.08402 4.5254 8.08268C4.74198 8.06439 4.91889 7.88549 4.91889 7.66452V7.34331C4.91889 7.11051 4.71915 6.91392 4.48584 6.91392Z"/>
+            <path d="M14.8769 7.21831L13.0778 5.42151C12.9128 5.25664 12.6444 5.25664 12.4794 5.42151L12.2525 5.64846C12.1727 5.72785 12.1288 5.83406 12.1288 5.94711C12.1288 6.06028 12.1726 6.16272 12.2525 6.24223L12.9285 6.91392H10.7819C10.7808 6.91392 10.78 6.91392 10.779 6.91392H10.5017C10.2684 6.91392 10.0811 7.11038 10.0811 7.34331V7.66452C10.0811 7.88549 10.251 8.06415 10.4677 8.08256C10.4749 8.08402 10.4801 8.08585 10.4874 8.08585H12.9655L12.2892 8.76206C12.2096 8.84145 12.1657 8.94852 12.1657 9.06132C12.1657 9.17461 12.2095 9.28108 12.2892 9.36059L12.5165 9.58753C12.599 9.66997 12.7072 9.71131 12.8157 9.71131C12.9241 9.71131 13.0322 9.67009 13.1148 9.58766L14.877 7.82756C14.9583 7.74635 15.0019 7.6372 14.9999 7.52513C15.0018 7.40867 14.9582 7.29953 14.8769 7.21831Z"/>
+            <path d="M7.5002 6.32735C6.85301 6.32735 6.32644 6.85331 6.32644 7.49989C6.32644 8.14634 6.85301 8.67243 7.5002 8.67243C8.14738 8.67243 8.67407 8.14634 8.67407 7.49989C8.67407 6.85331 8.14738 6.32735 7.5002 6.32735Z"/>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="money" viewBox="0 0 14 13">
+        <g>
+            <path d="M4.66641 4.37845C7.33719 4.37845 9.33283 3.32816 9.33283 2.38903C9.33283 1.44999 7.33715 0.399658 4.66641 0.399658C1.99568 0.399658 4.44492e-05 1.44999 4.44492e-05 2.38903C4.44492e-05 3.32816 1.99564 4.37845 4.66641 4.37845Z" litecoin/>
+            <path d="M4.66641 12.3364C5.05623 12.3364 5.43143 12.3138 5.78831 12.2728C5.48748 11.8882 5.2387 11.4614 5.05232 11.003C4.92426 11.0073 4.79576 11.0103 4.66637 11.0103C3.14029 11.0103 1.69507 10.7095 0.597042 10.1633C0.380841 10.0558 0.181886 9.94023 4.44492e-05 9.81792V10.347C4.44492e-05 11.2861 1.99564 12.3364 4.66641 12.3364Z" litecoin/>
+            <path d="M4.66641 9.68377C4.68011 9.68377 4.69357 9.68355 4.70722 9.6835C4.67988 9.46613 4.66561 9.24473 4.66561 9.02011C4.66561 8.79558 4.67984 8.57431 4.70722 8.35712C4.69357 8.35712 4.68006 8.3576 4.66641 8.3576C3.14034 8.3576 1.69516 8.05679 0.597087 7.51062C0.380841 7.40309 0.181842 7.28755 0 7.16529V7.69435C4.44492e-05 8.63343 1.99564 9.68377 4.66641 9.68377Z" litecoin/>
+            <path d="M4.66641 7.03104C4.7987 7.03104 4.9292 7.02839 5.05806 7.02335C5.26501 6.51826 5.54784 6.05172 5.89268 5.63798C5.49344 5.68176 5.08313 5.70497 4.66641 5.70497C3.14034 5.70497 1.69516 5.40416 0.597087 4.85799C0.380841 4.75041 0.181842 4.63491 0 4.51261V5.04171C4.44492e-05 5.9808 1.99564 7.03104 4.66641 7.03104Z" litecoin/>
+            <path d="M6.66663 6.82176C6.37815 7.25319 6.17204 7.74352 6.07066 8.27041C6.02385 8.51329 5.99914 8.76387 5.99914 9.02011C5.99914 9.21276 6.01327 9.40219 6.03999 9.58759C6.10564 10.0431 6.24907 10.4738 6.45647 10.8661C6.6741 11.2778 6.962 11.6472 7.30439 11.9583C8.01593 12.6048 8.96226 12.9997 9.99957 12.9997C12.2054 12.9997 14 11.2144 14 9.02011C14 6.82574 12.2054 5.04056 9.99957 5.04056C9.77159 5.04056 9.54805 5.05993 9.33034 5.09654C8.22142 5.28309 7.26629 5.92508 6.66663 6.82176Z" litecoin/>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="delete" viewBox="0 0 12 15">
+        <g>
+            <path d="M10.6667 4.0907C10.4899 4.0907 10.3203 4.16253 10.1953 4.29039C10.0702 4.41825 10 4.59166 10 4.77248V12.4023C9.98088 12.7471 9.82932 13.0702 9.57833 13.3012C9.32734 13.5322 8.99727 13.6524 8.66 13.6357H3.34C3.00273 13.6524 2.67266 13.5322 2.42167 13.3012C2.17069 13.0702 2.01912 12.7471 2 12.4023V4.77248C2 4.59166 1.92976 4.41825 1.80474 4.29039C1.67971 4.16253 1.51014 4.0907 1.33333 4.0907C1.15652 4.0907 0.986953 4.16253 0.861929 4.29039C0.736905 4.41825 0.666667 4.59166 0.666667 4.77248V12.4023C0.685696 13.1088 0.977722 13.7788 1.47879 14.2655C1.97985 14.7523 2.64912 15.0161 3.34 14.9992H8.66C9.35089 15.0161 10.0201 14.7523 10.5212 14.2655C11.0223 13.7788 11.3143 13.1088 11.3333 12.4023V4.77248C11.3333 4.59166 11.2631 4.41825 11.1381 4.29039C11.013 4.16253 10.8435 4.0907 10.6667 4.0907Z"/>
+            <path d="M11.3333 2.04535H8.66667V0.681784C8.66667 0.500963 8.59643 0.327549 8.47141 0.19969C8.34638 0.0718305 8.17681 0 8 0H4C3.82319 0 3.65362 0.0718305 3.5286 0.19969C3.40357 0.327549 3.33333 0.500963 3.33333 0.681784V2.04535H0.666667C0.489856 2.04535 0.320286 2.11718 0.195262 2.24504C0.0702379 2.3729 0 2.54631 0 2.72713C0 2.90795 0.0702379 3.08137 0.195262 3.20923C0.320286 3.33709 0.489856 3.40892 0.666667 3.40892H11.3333C11.5101 3.40892 11.6797 3.33709 11.8047 3.20923C11.9298 3.08137 12 2.90795 12 2.72713C12 2.54631 11.9298 2.3729 11.8047 2.24504C11.6797 2.11718 11.5101 2.04535 11.3333 2.04535ZM4.66667 2.04535V1.36357H7.33333V2.04535H4.66667Z"/>
+            <path d="M5.33333 10.9085V6.13605C5.33333 5.95523 5.2631 5.78182 5.13807 5.65396C5.01305 5.5261 4.84348 5.45427 4.66667 5.45427C4.48986 5.45427 4.32029 5.5261 4.19526 5.65396C4.07024 5.78182 4 5.95523 4 6.13605V10.9085C4 11.0894 4.07024 11.2628 4.19526 11.3906C4.32029 11.5185 4.48986 11.5903 4.66667 11.5903C4.84348 11.5903 5.01305 11.5185 5.13807 11.3906C5.2631 11.2628 5.33333 11.0894 5.33333 10.9085Z"/>
+            <path d="M8 10.9085V6.13605C8 5.95523 7.92976 5.78182 7.80474 5.65396C7.67971 5.5261 7.51015 5.45427 7.33333 5.45427C7.15652 5.45427 6.98695 5.5261 6.86193 5.65396C6.73691 5.78182 6.66667 5.95523 6.66667 6.13605V10.9085C6.66667 11.0894 6.73691 11.2628 6.86193 11.3906C6.98695 11.5185 7.15652 11.5903 7.33333 11.5903C7.51015 11.5903 7.67971 11.5185 7.80474 11.3906C7.92976 11.2628 8 11.0894 8 10.9085Z"/>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="link" viewBox="0 0 15 15">
+        <g>
+            <path d="M6.2184 11.4329L4.45088 13.2004C3.7181 13.9332 2.53143 13.9332 1.79926 13.2006C1.06695 12.4683 1.06695 11.2815 1.79912 10.5493L5.33477 7.01364C6.06694 6.28145 7.25373 6.28145 7.98589 7.01364C8.22997 7.25771 8.62571 7.25771 8.86978 7.01364C9.11386 6.76957 9.11386 6.37382 8.86978 6.12975C7.64944 4.90941 5.67122 4.90941 4.45088 6.12975L0.915254 9.66537C-0.305085 10.8857 -0.305085 12.8639 0.915254 14.0843C2.13545 15.3053 4.11382 15.3053 5.3348 14.0843L7.10232 12.3168C7.3464 12.0727 7.3464 11.6769 7.10232 11.4329C6.85825 11.1888 6.46247 11.1888 6.2184 11.4329Z"/>
+            <path d="M14.0844 0.915254C12.8641 -0.305085 10.8852 -0.305085 9.66485 0.915254L7.54421 3.03589C7.30014 3.27997 7.30014 3.67571 7.54421 3.91978C7.78828 4.16386 8.18403 4.16386 8.4281 3.91978L10.5487 1.79915C11.2809 1.06695 12.4683 1.06695 13.2005 1.79915C13.9327 2.53131 13.9327 3.7181 13.2005 4.45026L9.31173 8.33907C8.57954 9.07126 7.39277 9.07126 6.66061 8.33907C6.41654 8.09499 6.02079 8.09499 5.77672 8.33907C5.53264 8.58314 5.53264 8.97888 5.77672 9.22296C6.99706 10.4433 8.97528 10.4433 10.1956 9.22296L14.0844 5.33419C15.3047 4.11385 15.3047 2.13559 14.0844 0.915254Z"/>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="link" viewBox="0 0 15 15">
+        <g>
+            <path d="M6.2184 11.4329L4.45088 13.2004C3.7181 13.9332 2.53143 13.9332 1.79926 13.2006C1.06695 12.4683 1.06695 11.2815 1.79912 10.5493L5.33477 7.01364C6.06694 6.28145 7.25373 6.28145 7.98589 7.01364C8.22997 7.25771 8.62571 7.25771 8.86978 7.01364C9.11386 6.76957 9.11386 6.37382 8.86978 6.12975C7.64944 4.90941 5.67122 4.90941 4.45088 6.12975L0.915254 9.66537C-0.305085 10.8857 -0.305085 12.8639 0.915254 14.0843C2.13545 15.3053 4.11382 15.3053 5.3348 14.0843L7.10232 12.3168C7.3464 12.0727 7.3464 11.6769 7.10232 11.4329C6.85825 11.1888 6.46247 11.1888 6.2184 11.4329Z"/>
+            <path d="M14.0844 0.915254C12.8641 -0.305085 10.8852 -0.305085 9.66485 0.915254L7.54421 3.03589C7.30014 3.27997 7.30014 3.67571 7.54421 3.91978C7.78828 4.16386 8.18403 4.16386 8.4281 3.91978L10.5487 1.79915C11.2809 1.06695 12.4683 1.06695 13.2005 1.79915C13.9327 2.53131 13.9327 3.7181 13.2005 4.45026L9.31173 8.33907C8.57954 9.07126 7.39277 9.07126 6.66061 8.33907C6.41654 8.09499 6.02079 8.09499 5.77672 8.33907C5.53264 8.58314 5.53264 8.97888 5.77672 9.22296C6.99706 10.4433 8.97528 10.4433 10.1956 9.22296L14.0844 5.33419C15.3047 4.11385 15.3047 2.13559 14.0844 0.915254Z"/>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="settings" viewBox="0 0 15 15">
+        <g>
+            <path d="M14.5583 8.69224L13.9145 8.17854C13.4735 7.82666 13.4743 7.17264 13.9145 6.82146L14.5583 6.30776C15.0165 5.94217 15.1336 5.31527 14.8369 4.81708L13.5657 2.68292C13.2689 2.18476 12.6501 1.96972 12.0944 2.17146L11.3135 2.45502C10.7786 2.6492 10.1947 2.32169 10.1009 1.77647L9.96386 0.979189C9.86629 0.411826 9.36474 0 8.77127 0H6.22877C5.63527 0 5.1337 0.411826 5.03616 0.979219L4.89905 1.77647C4.80513 2.32266 4.22037 2.64888 3.68648 2.45505L2.90558 2.17146C2.34993 1.96972 1.73113 2.18479 1.43434 2.68292L0.163102 4.81705C-0.133632 5.31519 -0.016474 5.94211 0.441729 6.30773L1.08552 6.82143C1.52659 7.17334 1.52571 7.8273 1.08552 8.17852L0.441699 8.69221C-0.016474 9.05783 -0.133662 9.68476 0.163071 10.1829L1.43434 12.3171C1.7311 12.8152 2.34978 13.0303 2.90558 12.8285L3.68645 12.545C4.22143 12.3507 4.80529 12.6784 4.89902 13.2235L5.03612 14.0207C5.1337 14.5882 5.63527 15 6.22874 15H8.77124C9.36471 15 9.86629 14.5882 9.96383 14.0208L10.1009 13.2236C10.1948 12.6775 10.7795 12.3511 11.3135 12.545L12.0944 12.8285C12.6502 13.0303 13.2689 12.8152 13.5657 12.3171L14.837 10.1829C15.1336 9.68476 15.0165 9.05783 14.5583 8.69224ZM12.5186 11.7311L11.7377 11.4476C10.4894 10.9943 9.12704 11.759 8.90835 13.0309L8.77127 13.8281H6.22877L6.09166 13.0309C5.87255 11.7565 4.50822 10.9952 3.26231 11.4476L2.48141 11.7311L1.21018 9.59698L1.85397 9.08329C2.88315 8.2621 2.88101 6.7362 1.85397 5.91671L1.21018 5.40302L2.48144 3.26886L3.26231 3.55242C4.51067 4.00564 5.87298 3.241 6.09166 1.96913L6.22874 1.17188H8.77124L8.90832 1.96913C9.12746 3.2436 10.4919 4.00471 11.7377 3.55242L12.5186 3.26886L13.7901 5.40272C13.7901 5.40272 13.79 5.40281 13.7898 5.40299L13.146 5.91668C12.1169 6.73781 12.1189 8.26374 13.146 9.08326L13.7898 9.59695L12.5186 11.7311ZM7.50001 4.60936C5.85554 4.60936 4.51765 5.9061 4.51765 7.5C4.51765 9.0939 5.85554 10.3906 7.50001 10.3906C9.14448 10.3906 10.4824 9.0939 10.4824 7.5C10.4824 5.9061 9.14448 4.60936 7.50001 4.60936ZM7.50001 9.21876C6.52221 9.21876 5.72671 8.44772 5.72671 7.5C5.72671 6.55228 6.52221 5.78124 7.50001 5.78124C8.4778 5.78124 9.2733 6.55228 9.2733 7.5C9.2733 8.44772 8.4778 9.21876 7.50001 9.21876Z"/>
+        </g>
+    </symbol>
+</svg>
+
+                <div class="content__row">
+                    <main class="content__main with-pag">
+                        <header class="block-header">
+                            <h2>Мои ескроу сделки</h2>
+                        </header>
+                        <form action="#" class="block-filters">
+                            <label>
+                                <p>Код сделки</p>
+                                <input type="search" name="search" placeholder="Поиск...">
+                            </label>
+                            <label>
+                                <p>Адрес кошелька</p>
+                                <input type="text" name="address" placeholder="Адрес кошелька">
+                            </label>
+                            <label>
+                                <p>Тип сделки</p>
+                                <div class="currency dropdown-container">
+                                    <div class="arrow"></div>
+                                    <div class="currency__link dropdown-toggle hover-dropdown">
+                                        <p>
+                                            Все
+                                        </p>
+                                    </div>
+                                    <ul class="header-down__menu dropdown-menu">
+                                        <li class="header-down__link currency-down__link">
+                                            <p>
+                                                Валюта:
+                                                <span>$</span>
+                                            </p>
+                                        </li>
+                                        <li class="header-down__link currency-down__link">
+                                            <p>
+                                                Валюта:
+                                                <span>$</span>
+                                            </p>
+                                        </li>
+                                        <li class="header-down__link currency-down__link">
+                                            <p>
+                                                Валюта:
+                                                <span>$</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </label>
+                            <label>
+                                <p>Криптовалюта</p>
+                                <div class="currency dropdown-container">
+                                    <div class="arrow"></div>
+                                    <div class="currency__link dropdown-toggle hover-dropdown">
+                                        <p>
+                                            09.06.2022
+                                        </p>
+                                    </div>
+                                    <ul class="header-down__menu dropdown-menu">
+                                        <li class="header-down__link currency-down__link">
+                                            <p>
+                                                Валюта:
+                                                <span>$</span>
+                                            </p>
+                                        </li>
+                                        <li class="header-down__link currency-down__link">
+                                            <p>
+                                                Валюта:
+                                                <span>$</span>
+                                            </p>
+                                        </li>
+                                        <li class="header-down__link currency-down__link">
+                                            <p>
+                                                Валюта:
+                                                <span>$</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </label>
+                            <label>
+                                <p>Время</p>
+                                <div class="currency dropdown-container">
+                                    <div class="arrow"></div>
+                                    <div class="currency__link dropdown-toggle hover-dropdown">
+                                        <p>
+                                            Все
+                                        </p>
+                                    </div>
+                                    <ul class="header-down__menu dropdown-menu">
+                                        <li class="header-down__link currency-down__link">
+                                            <p>
+                                                Валюта:
+                                                <span>$</span>
+                                            </p>
+                                        </li>
+                                        <li class="header-down__link currency-down__link">
+                                            <p>
+                                                Валюта:
+                                                <span>$</span>
+                                            </p>
+                                        </li>
+                                        <li class="header-down__link currency-down__link">
+                                            <p>
+                                                Валюта:
+                                                <span>$</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </label>
+                            <label>
+                                <p>Статус</p>
+                                <div class="currency dropdown-container">
+                                    <div class="arrow"></div>
+                                    <div class="currency__link dropdown-toggle hover-dropdown">
+                                        <p>
+                                            Все
+                                        </p>
+                                    </div>
+                                    <ul class="header-down__menu dropdown-menu">
+                                        <li class="header-down__link currency-down__link">
+                                            <p>
+                                                Валюта:
+                                                <span>$</span>
+                                            </p>
+                                        </li>
+                                        <li class="header-down__link currency-down__link">
+                                            <p>
+                                                Валюта:
+                                                <span>$</span>
+                                            </p>
+                                        </li>
+                                        <li class="header-down__link currency-down__link">
+                                            <p>
+                                                Валюта:
+                                                <span>$</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </label>
+                            <button class="btn">Сброс</button>
+                        </form>
+                        <article class="transactions transactions__with-pag">
+                            <table class="transactions__table esk__table">
+                                <tbody>
+                                    <tr>
+                                        <th>Сделка</th>
+                                        <th>Код сделки</th>
+                                        <th>Цена</th>
+                                        <th>Криптовалюта</th>
+                                        <th>Время</th>
+                                        <th>Оплата</th>
+                                        <th>Статус</th>
+                                    </tr>
+                                    <tr class="buy">
+                                        <td>
+                                            <div class="esk__img">
+                                                <svg>
+                                                    <use xlink:href="#money"></use>
+                                                </svg>
+                                            </div>
+                                            Покупка
+                                        </td>
+                                        <td class="table__address">5454р55696213,215454р55696213,215454р55696213,21</td>
+                                        <td>66 329,50$</td>
+                                        <td>0,0002 BTC</td>
+                                        <td>
+                                            09.06.2022 / 13:45
+                                        </td>
+                                        <td>
+                                            <img src="img/svgicons/litecoin.svg" alt="litecoin">
+                                            <div class="table__currency">
+                                                <p>Litecoin</p>
+                                                <p class="table__address">ltcmweb1qqvtl3q2mfjrprrz59h6axkd2ne4lkz95d2suyw7vgzksxyqth7ea6qcc0frqqzntqg7hqszrdclfez7q4agtxd8lz5qvfv8n99tzae9dhsndtlse</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="pending">Открыта</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="sell">
+                                        <td>
+                                            <div class="esk__img">
+                                                <svg>
+                                                    <use xlink:href="#money"></use>
+                                                </svg>
+                                            </div>
+                                            Покупка
+                                        </td>
+                                        <td class="table__address">5454р55696213,215454р55696213,215454р55696213,21</td>
+                                        <td>66 329,50$</td>
+                                        <td>0,0002 BTC</td>
+                                        <td>
+                                            09.06.2022 / 13:45
+                                        </td>
+                                        <td>
+                                            <img src="img/svgicons/litecoin.svg" alt="litecoin">
+                                            <div class="table__currency">
+                                                <p>Litecoin</p>
+                                                <p class="table__address">ltcmweb1qqvtl3q2mfjrprrz59h6axkd2ne4lkz95d2suyw7vgzksxyqth7ea6qcc0frqqzntqg7hqszrdclfez7q4agtxd8lz5qvfv8n99tzae9dhsndtlse</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="done">Закрыта</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="buy">
+                                        <td>
+                                            <div class="esk__img">
+                                                <svg>
+                                                    <use xlink:href="#money"></use>
+                                                </svg>
+                                            </div>
+                                            Покупка
+                                        </td>
+                                        <td class="table__address">5454р55696213,215454р55696213,215454р55696213,21</td>
+                                        <td>66 329,50$</td>
+                                        <td>0,0002 BTC</td>
+                                        <td>
+                                            09.06.2022 / 13:45
+                                        </td>
+                                        <td>
+                                            <img src="img/svgicons/litecoin.svg" alt="litecoin">
+                                            <div class="table__currency">
+                                                <p>Litecoin</p>
+                                                <p class="table__address">ltcmweb1qqvtl3q2mfjrprrz59h6axkd2ne4lkz95d2suyw7vgzksxyqth7ea6qcc0frqqzntqg7hqszrdclfez7q4agtxd8lz5qvfv8n99tzae9dhsndtlse</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="pending">Открыта</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="sell">
+                                        <td>
+                                            <div class="esk__img">
+                                                <svg>
+                                                    <use xlink:href="#money"></use>
+                                                </svg>
+                                            </div>
+                                            Покупка
+                                        </td>
+                                        <td class="table__address">5454р55696213,215454р55696213,215454р55696213,21</td>
+                                        <td>66 329,50$</td>
+                                        <td>0,0002 BTC</td>
+                                        <td>
+                                            09.06.2022 / 13:45
+                                        </td>
+                                        <td>
+                                            <img src="img/svgicons/litecoin.svg" alt="litecoin">
+                                            <div class="table__currency">
+                                                <p>Litecoin</p>
+                                                <p class="table__address">ltcmweb1qqvtl3q2mfjrprrz59h6axkd2ne4lkz95d2suyw7vgzksxyqth7ea6qcc0frqqzntqg7hqszrdclfez7q4agtxd8lz5qvfv8n99tzae9dhsndtlse</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="done">Закрыта</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="buy">
+                                        <td>
+                                            <div class="esk__img">
+                                                <svg>
+                                                    <use xlink:href="#money"></use>
+                                                </svg>
+                                            </div>
+                                            Покупка
+                                        </td>
+                                        <td class="table__address">5454р55696213,215454р55696213,215454р55696213,21</td>
+                                        <td>66 329,50$</td>
+                                        <td>0,0002 BTC</td>
+                                        <td>
+                                            09.06.2022 / 13:45
+                                        </td>
+                                        <td>
+                                            <img src="img/svgicons/litecoin.svg" alt="litecoin">
+                                            <div class="table__currency">
+                                                <p>Litecoin</p>
+                                                <p class="table__address">ltcmweb1qqvtl3q2mfjrprrz59h6axkd2ne4lkz95d2suyw7vgzksxyqth7ea6qcc0frqqzntqg7hqszrdclfez7q4agtxd8lz5qvfv8n99tzae9dhsndtlse</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="pending">Открыта</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="sell">
+                                        <td>
+                                            <div class="esk__img">
+                                                <svg>
+                                                    <use xlink:href="#money"></use>
+                                                </svg>
+                                            </div>
+                                            Покупка
+                                        </td>
+                                        <td class="table__address">5454р55696213,215454р55696213,215454р55696213,21</td>
+                                        <td>66 329,50$</td>
+                                        <td>0,0002 BTC</td>
+                                        <td>
+                                            09.06.2022 / 13:45
+                                        </td>
+                                        <td>
+                                            <img src="img/svgicons/litecoin.svg" alt="litecoin">
+                                            <div class="table__currency">
+                                                <p>Litecoin</p>
+                                                <p class="table__address">ltcmweb1qqvtl3q2mfjrprrz59h6axkd2ne4lkz95d2suyw7vgzksxyqth7ea6qcc0frqqzntqg7hqszrdclfez7q4agtxd8lz5qvfv8n99tzae9dhsndtlse</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="done">Закрыта</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                        <article class="block-pagination">
+                            <div class="block-pagination__blocks">
+                                <p>
+                                    Рядов на странице:
+                                </p>
+                                <label>
+                                    <div class="currency dropdown-container">
+                                        <div class="arrow"></div>
+                                        <div class="currency__link dropdown-toggle hover-dropdown">
+                                            <p>
+                                                15
+                                            </p>
+                                        </div>
+                                        <ul class="header-down__menu dropdown-menu">
+                                            <li class="header-down__link currency-down__link">
+                                                <p>
+                                                    15
+                                                </p>
+                                            </li>
+                                            <li class="header-down__link currency-down__link">
+                                                <p>
+                                                    15
+                                                </p>
+                                            </li>
+                                            <li class="header-down__link currency-down__link">
+                                                <p>
+                                                    15
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="block-pagination__pages">
+                                <a href="#" class="active">1</a>
+                                <a href="#">2</a>
+                                <a href="#">...</a>
+                                <a href="#">23</a>
+                                <a href="#" class="block-pagination__prev block-pagination__btn">
+                                    <img src="img/svgicons/pagination-btn.svg" alt="prev-page">
+                                </a>
+                                <a href="#" class="block-pagination__next block-pagination__btn">
+                                    <img src="img/svgicons/pagination-btn.svg" alt="next-page">
+                                </a>
+                            </div>
+                        </article>
+                    </main>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
