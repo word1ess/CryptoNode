@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/svgicons/logo.svg">
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script defer src="js/app.min.js"></script>
     <title>Кабинет Админа</title>
 </head>
@@ -43,7 +43,15 @@
                     </a>
                     <a href="#">
                         <img src="img/svgicons/shops.svg" alt="shops">
-                        <p> Магазины</p>
+                        <p class="slide-show"> Магазины</p>
+                        <div class="slide-toggle">
+                            <a href="#">Магазин 1</a>
+                            <a href="#">Магазин 2</a>
+                            <a href="#">Магазин 3</a>
+                            <a href="#">Магазин 4</a>
+                            <a href="#">Магазин 5</a>
+                            <a href="#">Магазин 6</a>
+                        </div>
                     </a>
                     <a href="#">
                         <img src="img/svgicons/documents.svg" alt="documents">
@@ -275,11 +283,9 @@
 
                 <div class="content__row chat">
                     <aside class="chat__items block-bordered">
-                        <form action="#" class="search">
-                            <label>
-                                <img src="img/svgicons/search.svg" alt="search">
-                                <input type="search" placeholder="Поиск ...">
-                            </label>
+                        <form action="#" class="search text">
+                            <img src="img/svgicons/search.svg" alt="search">
+                            <input type="search" placeholder="Поиск ...">
                         </form>
                         <div class="chat__users">
                             <section class="chat__user">
@@ -562,6 +568,9 @@
                             </form>
                         </footer>
                     </main>
+                </div>
+                <div class="login__copy">
+                    Copyright © 2024 FreeСryptoNode. Все права защищены
                 </div>
             </main>
         </div>

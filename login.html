@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/svgicons/logo.svg">
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script defer src="js/app.min.js"></script>
     <title>Войти</title>
 </head>
@@ -21,15 +21,27 @@
                             <h2>FreeСryptoNode</h2>
                             <p>Используй и храни крипту безопасно</p>
                         </div>
-                        <div class="login__form">
+                        <form class="login__form">
                             <h1>Войти в личный кабинет</h1>
                             <label>
                                 <p>Ваш e-mail</p>
-                                <input type="email" name="email" placeholder="E-mail">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="E-mail"
+                                    required
+                                >
                             </label>
                             <label>
                                 <p>Ваш пароль</p>
-                                <input type="password" name="password" placeholder="Пароль">
+                                <input
+                                    type="password"
+                                    name="password"
+                                    placeholder="Пароль"
+                                    required
+                                    class="invalid"
+                                >
+                                <div class="text-field__message">Ошибка</div>
                             </label>
                             <div class="login__checkboxes">
                                 <label class="checkbox">
@@ -40,9 +52,9 @@
                                 </label>
                                 <a href="#">Не помню свой пароль</a>
                             </div>
-                            <button class="btn">Войти</button>
+                            <button class="btn" type="submit">Войти</button>
                             <button class="btn btn__bordered">Зарегистрироваться</button>
-                        </div>
+                        </form>
                         <div class="login__copy">
                             Copyright © 2024 FreeСryptoNode. Все права защищены
                         </div>
