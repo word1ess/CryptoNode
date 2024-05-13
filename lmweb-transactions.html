@@ -7,7 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/svgicons/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script defer src="js/app.min.js"></script>
     <title>LMWEB</title>
 </head>
@@ -97,120 +101,31 @@
             <a href="#" class="notification mobile">
                 <img src="img/svgicons/notification.svg" alt="notification">
             </a>
-            <div class="header__lang dropdown-container">
-                <div class="arrow"></div>
-                <p class="dropdown-toggle hover-dropdown">Ru</p>
-                <ul class="header-down__menu dropdown-menu">
-                    <li class="header-down__link">
-                        <p>Ru</p>
-                    </li>
-                    <li class="header-down__link">
-                        <p>Ru</p>
-                    </li>
-                    <li class="header-down__link">
-                        <p>Ru</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="currency dropdown-container">
-                <div class="arrow"></div>
-                <div class="currency__link dropdown-toggle hover-dropdown">
-                    <img src="img/svgicons/bitcoin.svg" alt="">
-                    <div>
-                        <span>Bitcoin</span>
-                        <span>66 329,50 $</span>
-                    </div>
-                </div>
-                <ul class="header-down__menu dropdown-menu">
-                    <li class="header-down__link currency-down__link">
-                        <img src="img/svgicons/bitcoin.svg" alt="">
-                        <p>
-                            Bitcoin
-                            <span>66 329,50 $</span>
-                        </p>
-                    </li>
-                    <li class="header-down__link currency-down__link">
-                        <img src="img/svgicons/bitcoin.svg" alt="">
-                        <p>
-                            Bitcoin
-                            <span>66 329,50 $</span>
-                        </p>
-                    </li>
-                    <li class="header-down__link currency-down__link">
-                        <img src="img/svgicons/bitcoin.svg" alt="">
-                        <p>
-                            Bitcoin
-                            <span>66 329,50 $</span>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="currency dropdown-container">
-                <div class="arrow"></div>
-                <div class="currency__link dropdown-toggle hover-dropdown">
-                    <img src="img/svgicons/litecoin.svg" alt="">
-                    <div>
-                        <span>1 Litecoin:</span>
-                        <span>9 253,05 ₽</span>
-                    </div>
-                </div>
-                <ul class="header-down__menu dropdown-menu">
-                    <li class="header-down__link currency-down__link">
-                        <img src="img/svgicons/litecoin.svg" alt="">
-                        <p>
-                            1 Litecoin:
-                            <span>9 253,05 ₽</span>
-                        </p>
-                    </li>
-                    <li class="header-down__link currency-down__link">
-                        <img src="img/svgicons/litecoin.svg" alt="">
-                        <p>
-                            1 Litecoin:
-                            <span>9 253,05 ₽</span>
-                        </p>
-                    </li>
-                    <li class="header-down__link currency-down__link">
-                        <img src="img/svgicons/litecoin.svg" alt="">
-                        <p>
-                            1 Litecoin:
-                            <span>9 253,05 ₽</span>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="currency dropdown-container">
-                <div class="arrow"></div>
-                <div class="currency__link dropdown-toggle hover-dropdown">
-                    <img src="img/svgicons/money.svg" alt="">
-                    <div>
-                        <span> Валюта:</span>
-                        <span>$</span>
-                    </div>
-                </div>
-                <ul class="header-down__menu dropdown-menu">
-                    <li class="header-down__link currency-down__link">
-                        <img src="img/svgicons/money.svg" alt="">
-                        <p>
-                            Валюта:
-                            <span>$</span>
-                        </p>
-                    </li>
-                    <li class="header-down__link currency-down__link">
-                        <img src="img/svgicons/money.svg" alt="">
-                        <p>
-                            Валюта:
-                            <span>$</span>
-                        </p>
-                    </li>
-                    <li class="header-down__link currency-down__link">
-                        <img src="img/svgicons/money.svg" alt="">
-                        <p>
-                            Валюта:
-                            <span>$</span>
-                        </p>
-                    </li>
-                </ul>
-            </div>
+            <select class="dropdown" name="Lang">
+                <option value="Ru">Ru</option>
+                <option value="En">En</option>
+            </select>
+            <select class="dropdown" name="1 Bitcoin">
+                <option value="66 329,50 $" data-image="/img/svgicons/bitcoin.svg">
+                    66 329,50 $
+                </option>
+                <option value="1 $" data-image="/img/svgicons/bitcoin.svg">1 $</option>
+                <option value="2 $" data-image="/img/svgicons/bitcoin.svg">2 $</option>
+            </select>
+            <select class="dropdown" name="1 Litecoin">
+                <option value="66 329,50 $" data-image="/img/svgicons/litecoin.svg">
+                    66 329,50 $
+                </option>
+                <option value="1 $" data-image="/img/svgicons/litecoin.svg">1 $</option>
+                <option value="2 $" data-image="/img/svgicons/litecoin.svg">2 $</option>
+            </select>
+            <select class="dropdown" name="Валюта">
+                <option value="$" data-image="/img/svgicons/money.svg">
+                    $
+                </option>
+                <option value="Р" data-image="/img/svgicons/money.svg">Р</option>
+                <option value="П" data-image="/img/svgicons/money.svg">П</option>
+            </select>
             <form action="#" class="header__search">
                 <label>
                     <img src="img/svgicons/search.svg" alt="search">
