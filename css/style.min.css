@@ -6581,6 +6581,9 @@ select[name=Валюта] + span {
   gap: 50px;
   align-items: center;
 }
+.shops-list__currency .currency-item {
+  min-width: 113px;
+}
 .shops-list__price {
   font-weight: 700;
   font-size: 14px;
@@ -6603,6 +6606,20 @@ select[name=Валюта] + span {
   display: flex;
   gap: 10px;
   align-items: center;
+}
+.currency-item__img {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  flex: 0 0 25px;
+}
+.currency-item__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  object-fit: cover;
 }
 .currency-item__info p:first-child {
   font-weight: 600;
@@ -7339,11 +7356,6 @@ body {
     flex: 1 1 100%;
     margin-bottom: 10px;
   }
-  .header__search {
-    display: block;
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
   .header__currency-menu {
     flex-wrap: wrap;
     flex: 1 1 100%;
@@ -7394,10 +7406,18 @@ body {
   .transactions__header {
     flex-wrap: wrap;
   }
+  .shops-list__currency {
+    gap: 20px;
+  }
 }
 @media only screen and (max-width: 1280px) {
   .header .currency span:first-child {
     display: none;
+  }
+  .header__search {
+    display: block;
+    flex: 1 1 100%;
+    max-width: 100%;
   }
   .content {
     z-index: 99;
