@@ -7375,6 +7375,15 @@ body {
     flex: 1 1 100%;
     min-width: 100%;
   }
+  .header .currency span:first-child {
+    display: none;
+  }
+  .header__currency-menu {
+    flex: none;
+  }
+  .header__search {
+    max-width: auto;
+  }
   .header__row {
     flex-wrap: wrap;
   }
@@ -7414,19 +7423,6 @@ body {
   }
 }
 @media only screen and (max-width: 1280px) {
-  .header .currency span:first-child {
-    display: none;
-  }
-  .header__currency-menu {
-    min-width: auto;
-    flex-wrap: wrap;
-    flex: 1 1 100%;
-  }
-  .header__search {
-    display: block;
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
   .content {
     z-index: 99;
   }
@@ -7461,6 +7457,12 @@ body {
   .transactions__table th:nth-child(1) {
     width: 300px;
     flex: 0 0 300px;
+  }
+  .currency__link .hidden {
+    display: none;
+  }
+  .select2-container {
+    min-width: 165px;
   }
 }
 @media only screen and (max-width: 1111px) {
