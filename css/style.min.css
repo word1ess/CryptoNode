@@ -4665,7 +4665,10 @@ label.copy .btn__url {
 }
 
 .btn {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: fit-content;
   font-weight: 600;
   font-size: 14px;
   padding: 14px 20px;
@@ -4977,6 +4980,11 @@ label.copy .btn__url {
   margin: 0px 15px 0px 0px;
   display: block;
 }
+.transactions__table td img,
+.transactions__table th img {
+  width: 25px;
+  height: 25px;
+}
 .transactions__table td:nth-child(1),
 .transactions__table th:nth-child(1) {
   width: 100%;
@@ -4988,11 +4996,6 @@ label.copy .btn__url {
   margin-left: 0px;
   margin-right: 25px;
   padding-left: 0px;
-}
-.transactions__table td:nth-child(1) img,
-.transactions__table th:nth-child(1) img {
-  width: 25px;
-  height: 25px;
 }
 .transactions__table td:nth-child(2),
 .transactions__table th:nth-child(2) {
@@ -5359,6 +5362,13 @@ label.copy .btn__url {
 .block-header h2 {
   margin-bottom: 0px;
   flex: 1 1 auto;
+}
+.block-header .flex {
+  flex-wrap: nowrap;
+}
+.block-header .flex label {
+  display: block;
+  min-width: fit-content;
 }
 
 .block-bordered {
@@ -7832,6 +7842,14 @@ body {
   }
 }
 @media only screen and (max-width: 576px) {
+  .block-header .flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .block-header .flex * {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
   .api-page .flex div {
     flex: 1 1 100%;
   }
