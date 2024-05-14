@@ -4736,6 +4736,11 @@ label.copy .btn__url {
   flex: 1 1 auto;
   width: 100%;
 }
+.currency__link img,
+.currency-down__link img {
+  width: 25px;
+  height: 25px;
+}
 .currency__link p,
 .currency-down__link p {
   display: flex;
@@ -4964,31 +4969,45 @@ label.copy .btn__url {
   color: #7d91ae;
   font-weight: 400;
   font-size: 14px;
-  text-align: left;
+  text-align: center;
 }
 .transactions__table td,
 .transactions__table th {
   padding: 18px 15px;
-  margin: 0px 30px;
+  margin: 0px 15px 0px 0px;
   display: block;
 }
 .transactions__table td:nth-child(1),
 .transactions__table th:nth-child(1) {
   width: 100%;
-  flex: 1 1 auto;
+  flex: 0 0 330px;
   max-width: 300px;
   display: flex;
   gap: 10px;
   align-items: center;
   margin-left: 0px;
+  margin-right: 25px;
   padding-left: 0px;
 }
-.transactions__table td:nth-child(2), .transactions__table td:nth-child(4), .transactions__table td:nth-child(6),
-.transactions__table th:nth-child(2),
-.transactions__table th:nth-child(4),
+.transactions__table td:nth-child(1) img,
+.transactions__table th:nth-child(1) img {
+  width: 25px;
+  height: 25px;
+}
+.transactions__table td:nth-child(2),
+.transactions__table th:nth-child(2) {
+  min-width: 150px;
+  flex: 0 0 150px;
+}
+.transactions__table td:nth-child(6),
 .transactions__table th:nth-child(6) {
   min-width: 180px;
   flex: 0 0 180px;
+}
+.transactions__table td:nth-child(4),
+.transactions__table th:nth-child(4) {
+  min-width: 130px;
+  flex: 0 0 130px;
 }
 .transactions__table td:nth-child(3), .transactions__table td:nth-child(5),
 .transactions__table th:nth-child(3),
@@ -5289,6 +5308,8 @@ label.copy .btn__url {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 100%;
+  flex: 1 1 auto;
+  padding-top: 80px;
 }
 .login .btn {
   max-width: 100%;
