@@ -4161,6 +4161,11 @@ button.swiper-pagination-bullet {
   backdrop-filter: blur(3px);
   border-radius: 0px 0px 26px 26px;
 }
+.header-main.for-login {
+  border-radius: 0px;
+  background: rgba(34, 43, 69, 0.5960784314);
+  backdrop-filter: blur(3px);
+}
 .header-main__row {
   display: flex;
   gap: 20px;
@@ -5312,7 +5317,7 @@ label.copy .btn__url {
   grid-template-columns: repeat(2, 1fr);
   height: 100%;
   flex: 1 1 auto;
-  padding-top: 80px;
+  padding-top: 65px;
 }
 .login .btn {
   max-width: 100%;
@@ -5322,8 +5327,9 @@ label.copy .btn__url {
 .login__info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: 30px;
+  gap: 20px;
 }
 .login__form {
   display: grid;
@@ -5331,6 +5337,7 @@ label.copy .btn__url {
   max-width: 340px;
   width: 100%;
   margin: 0 auto;
+  margin-top: auto;
 }
 .login__form h1 {
   font-weight: 700;
@@ -5343,7 +5350,7 @@ label.copy .btn__url {
   justify-content: space-between;
 }
 .login__copy {
-  margin-top: 20px;
+  margin-top: auto;
 }
 .login__img {
   display: flex;
