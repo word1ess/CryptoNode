@@ -4318,7 +4318,7 @@ button.swiper-pagination-bullet {
 }
 .aside__links a.active {
   opacity: 1;
-  background: rgb(45, 87, 230);
+  background: rgb(45, 87, 230) !important;
   border-radius: 15px;
 }
 .aside__links a.active::after {
@@ -6092,14 +6092,18 @@ body::-webkit-scrollbar-thumb {
 .slide-show a {
   position: relative;
   z-index: 2;
+  transition: all 300ms ease;
+}
+.slide-show a.open {
+  opacity: 1;
+  border-radius: 15px 15px 0px 0px;
+  background: rgba(45, 88, 230, 0.7);
 }
 .slide-show .slide-toggle {
   border-radius: 0px 0px 15px 15px;
-  padding: 15px;
   background: rgba(45, 87, 230, 0.5);
-  max-height: 150px;
+  padding: 0px 15px 15px;
   overflow-y: auto;
-  transform: translate(0px, -10px);
   position: relative;
   z-index: 1;
   display: none;
@@ -6212,7 +6216,6 @@ body::-webkit-scrollbar-thumb {
 
 .select2-container {
   width: max-content !important;
-  min-width: 223px;
 }
 
 .select2-container--default .select2-selection--single {
@@ -6262,9 +6265,8 @@ body::-webkit-scrollbar-thumb {
   color: #0074b6;
 }
 
-select[name=Lang] + span,
-select[name=Валюта] + span {
-  width: fit-content !important;
+select.lang + span,
+select.currency + span {
   min-width: auto;
 }
 
@@ -7905,11 +7907,11 @@ body {
 }
 @media only screen and (max-width: 450px) {
   .select2,
-  select[name=Валюта] + span {
+  select.currency + span {
     width: calc(100% - 1px) !important;
     order: 5;
   }
-  select[name=Lang] + span {
+  select.lang + span {
     order: 2;
   }
   .cards-page__row {
