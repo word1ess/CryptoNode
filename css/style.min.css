@@ -6097,7 +6097,7 @@ body::-webkit-scrollbar-thumb {
 .slide-show a.open {
   opacity: 1;
   border-radius: 15px 15px 0px 0px;
-  background: rgba(45, 88, 230, 0.7);
+  background: rgba(45, 88, 230, 0.5);
 }
 .slide-show .slide-toggle {
   border-radius: 0px 0px 15px 15px;
