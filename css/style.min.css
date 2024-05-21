@@ -4242,6 +4242,14 @@ button.swiper-pagination-bullet {
   padding: 30px 20px 30px 0px;
 }
 .aside.active {
+  transform: translate(-200%, 0px);
+  width: 0px;
+  flex: 0 0 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 10000;
+}
+.aside.active *:not(.aside__btn) {
   display: none;
 }
 .aside a, .aside * {
@@ -4928,9 +4936,7 @@ label.copy .btn__url {
   border-radius: 30px;
   padding: 20px;
   background: #fff;
-  flex: 1 1 auto;
   position: relative;
-  height: 100%;
 }
 .transactions__header {
   display: flex;
@@ -6216,6 +6222,7 @@ body::-webkit-scrollbar-thumb {
 
 .select2-container {
   width: max-content !important;
+  min-width: 110px;
 }
 
 .select2-container--default .select2-selection--single {
@@ -7341,10 +7348,6 @@ body {
 .content__shop .card__btns {
   position: relative;
   z-index: 2;
-}
-.content__table {
-  height: calc(100% - 470px);
-  max-height: calc(100% - 470px);
 }
 .content__table .block-header {
   justify-content: space-between;
