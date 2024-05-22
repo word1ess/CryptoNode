@@ -4273,7 +4273,6 @@ button.swiper-pagination-bullet {
   top: 30px;
   rotate: 180deg;
   z-index: 100;
-  left: 280px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   transition: all 300ms ease;
 }
